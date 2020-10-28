@@ -1,0 +1,71 @@
+@import "mixin";
+
+
+footer {
+
+    .footer {
+        
+        @include flexFunc;
+        justify-content: space-between;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        
+
+        .footer-col {
+            width: 220px;
+            text-align: center;
+    
+        }
+
+        .download {
+            
+            p {
+                margin: 20px 0px 10px;
+            }
+        }
+
+        .app {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            
+            img {
+                width: 100px;
+                margin-right: 5px;
+                cursor: pointer;
+                margin-top: 5px;
+            }
+        }
+
+        .footer-logo {
+            text-align: center;
+            img {
+                width: 100px;
+                border-radius: 50%;
+            }
+        }
+
+        ul {
+            list-style: none;
+
+            a {
+                text-decoration: none;
+                color: $textColor;
+            }
+        }
+
+        .footer-col5, .footer-col6 {
+            h3 {
+                margin-bottom: 20px;
+                
+            }
+        }
+    }
+
+    .copyright {
+        text-align: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    
+}

@@ -1,0 +1,67 @@
+
+@mixin productRow {
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .img {
+        margin: 25px;
+        text-align: center;
+
+        img {
+           
+            width: 200px;
+            height: 300px;
+            border-radius: 5px;
+            box-shadow: 2px 5px 5px $hoverColor;
+            transition: transform 0.5s;
+    
+            &:hover {
+                transform: translateY(-10px);
+            }
+        }
+    }
+}
+
+@mixin flexFunc {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+//ABOUT US MIXIN
+//mixin for the row
+@mixin about__rows__header {
+    color: darken($color: $hoverColor, $amount: 20%);
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+
+//mixin for the after and before pseudoclass
+@mixin PseudoClass__hr {
+    content: "";
+    width: 10vw;
+    height: 1vh;
+    background-color: $hoverColor;
+    position: absolute;
+    border-radius: 5px;
+}
+
+//mixin for navbar responsive bar, the three white horizontal bar
+@mixin white_hr_bar {
+    content: "";
+    position: absolute;
+    width: 1.6rem;
+    height: 3px;
+    border-radius: 3px;
+    background-color: white;
+    transition: 0.5s;
+}
+
+//mixin for icon pointer
+@mixin icon_pointer {
+    transform: rotate(360deg);
+}
